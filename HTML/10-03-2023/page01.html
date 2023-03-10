@@ -1,0 +1,30 @@
+<html>
+
+    <head>
+        <title>
+            Hello HTML
+        </title>
+    </head>
+    
+    <body>
+        <div>
+            <p style="text-align: center;">
+                Hello World!
+            </p>
+            <button onclick=alertUser()>
+                Press me!
+            </button>
+        </div>
+
+        <script>
+            const alertUser=()=>{
+                alert("Noooo");
+                setTimeout(()=>{alert("3")},1000);
+                setTimeout(()=>{alert("2")},2000);
+                setTimeout(()=>{alert("1")},3000);
+
+            };
+        </script>
+    </body>
+
+</html>
