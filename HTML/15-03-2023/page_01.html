@@ -1,0 +1,48 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            My first webpage!
+        </title>
+
+    </head>
+
+    <body>
+        <div
+            style="
+            border: solid 1px black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            ">
+
+            <h1>
+                Have a good day! TEP
+            </h1>
+
+            <div>
+
+                <h2></h2>
+                <p id="paragraph">
+                    hello world!
+                </p>
+                <p id="paragraph2">
+
+                </p>
+            
+            </div>
+        </div>
+
+
+
+
+        <script>
+            const date = new Date();
+            document.querySelector("#paragraph2").textContent=`It is ${date.toDateString()}.`;
+        </script>
+
+    </body>
+
+
+</html>
