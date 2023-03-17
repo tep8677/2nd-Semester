@@ -3,15 +3,6 @@
 using namespace std;
 
 
-class PointerCount{
-	private:
-		int* id = new int;
-	public:
-		int value(){
-			return *id;
-		}
-};
-
 class ClassWithPointers{
 	private:
 		int id;
@@ -22,9 +13,22 @@ class ClassWithPointers{
 			id=*ptr;
 		};
 		
+		
 		void displayID(){
 			cout << id << endl;
 		};
+
+
+	//deconstructor runs automatically
+	//after exiting the block of code
+	//in which the objects were created
+	//(inside a function/while/etc.)
+	// and it cleans up memory..
+
+	//This happens in reverse order as of that they were created
+		~ClassWithPointers(){
+			cout << "Deleting object:" << id << endl;
+		}
 
 };
 
@@ -33,20 +37,19 @@ int main(){
 	int* id = new int;
 	*id = 0;
 	
-	PointerCount numberCounter;
-	//changing external id value when a new class is created
-	
-	cout << numberCounter.value() << endl << endl;
-//	ClassWithPointers One(numberCounter.value());
-//	ClassWithPointers Two(numberCounter.value());
+	ClassWithPointers One(id);
+	ClassWithPointers Two(id);
 	ClassWithPointers Three(id);
 	ClassWithPointers Four(id);
+	
+	// delete the pointer after we have stopped using it
+	delete id;
+	
 	///
 //	One.displayID();
 //	Two.displayID();
 	Four.displayID();
 	
-	delete id;
 	
 	
 	return 0;
