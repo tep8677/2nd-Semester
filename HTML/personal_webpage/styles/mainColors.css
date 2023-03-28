@@ -1,0 +1,23 @@
+html{
+  color: purple;
+}
+
+a{
+  font-weight: 700;
+  color: rgb(250, 255, 176);
+  text-shadow: -1px 1px 2px black;
+}
+
+a:hover{
+  color: rgb(221, 255, 189);
+}
+
+h1,h2,h4,h5,h6{
+  color: rgb(213, 247, 253);
+  text-shadow: black 0px 2px 3px;
+}
+
+
+body{
+  background-color: rgb(213, 202, 252);
+}

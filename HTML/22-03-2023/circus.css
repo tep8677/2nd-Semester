@@ -1,0 +1,41 @@
+h1{
+    color:blue;
+    background:linear-gradient(green,yellow);
+    font-family: monospace;
+    font-weight: 200;
+    border-radius: 20px;
+    text-align: center;
+}   
+
+body{
+    background: radial-gradient(blue,yellow);
+
+}
+img{
+    border: solid ;
+    border-color: red greenyellow yellow blue;
+    border-width: 4px;
+}
+
+p{
+    background: radial-gradient( green,palevioletred);
+    color: greenyellow;
+    font-family: cursive;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2{
+    background: radial-gradient(blue, green);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-blend-mode: exclusion;
+}
+
+figcaption{
+    text-align: center;
+    background:radial-gradient(white,black);
+    padding-block: 20px;
+    border-radius: 20px;
+}

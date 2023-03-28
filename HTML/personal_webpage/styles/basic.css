@@ -1,20 +1,13 @@
 html{
     font-size: large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: purple;
 }
 
 a{
     text-decoration: none;
-    font-weight: 700;
-    color: rgb(250, 255, 176);
-    text-shadow: -1px 1px 2px black;
     font-size: 20px;
 }
 
-a:hover{
-    color: rgb(221, 255, 189);
-}
 
 li{
     width: fit-content;
@@ -35,20 +28,9 @@ h1:hover{
     transition-duration: 1000ms;
 }
 
-h1,h2,h4,h5,h6{
-    color: rgb(213, 247, 253);
-    text-shadow: black 0px 2px 3px;
-}
-
-
-body{
-    background-color: rgb(213, 202, 252);
-}
-
 summary{
     cursor: pointer;
 }
-
 
 
 .intro-div{
