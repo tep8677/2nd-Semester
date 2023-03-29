@@ -44,6 +44,8 @@ summary{
     padding-inline: 5%;
 }
 
+/* styles for responsiveness */
+
 @media (min-width: 768px) {
     .intro-div{
         flex-direction: row;
@@ -65,5 +67,45 @@ summary{
     }
 }
 
+/* curved arrow that goes back to main page */
 
+.curvedArrow{
+    width: 35px;
+    transform: rotate(0deg) scaleX(-1);
+    filter: 
+        invert(0.6)
+        sepia(0.2)
+        hue-rotate(290deg)
+        saturate(10);
+}
+
+
+.curvedArrow:hover{
+    filter: 
+        invert(0.7)
+        sepia(0.2)
+        hue-rotate(290deg)
+        saturate(10);
+}
+
+.curvedArrowShadow{
+    width: 35px;
+    transform: rotate(0deg);
+    transform: scaleX(-1);
+    filter:blur(0.8px);
+    position: absolute;
+    left: 7px;
+    z-index: -2;
+}
+
+.divContaingTextWithImg{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-block: 2px;
+  }
+
+hr{
+    max-width: 750px;
+}
 
