@@ -8,6 +8,7 @@
         <link rel="icon" href="./images/me.jpg">
         <link rel="stylesheet" href="./styles/basic.css"/>
         <link rel="stylesheet" href="./styles/mainColors.css"/>
+        <!-- alternative stylesheet below -->
         <!-- <link rel="stylesheet" href="./styles/alternativeColors.css"/> -->
 
     </head>
@@ -48,21 +49,21 @@
                         <li>
                             <details>
                                 <summary>Indie</summary>
-                                Mitski, Cigarettes After Sex, Chromatics, Pan Pan, Vlad&nbsp;Holiday, Japanese/Korean Indie
-
+                                Mitski, Chromatics Vlad&nbsp;Holiday
                             </details>
-
                         </li>
+
                         <li>
                             <details>
                                 <summary>Alternative</summary>
-                                Badflower, Lana del Rey, MCR, Эйфория, Παιδί Τραύμα, Garage Rock (Fidlar), IVOXYGEN, Joji
+                                Badflower, Lana del Rey, Joji
                             </details>
                         </li>
+
                         <li>
                             <details>
                                 <summary>Post-Punk</summary>
-                                Mareux, This Cold Night, Lebanon Hanover, Molchat Doma (ofc. XD),
+                                Mareux, This Cold Night, Lebanon Hanover, Molchat Doma
                             </details>
                         </li>
                     </ol>
@@ -73,25 +74,27 @@
                     </h3>
                     <ol>
                         <li>
-                            <div style="display: flex; align-items: center; gap: 5px;padding-block: 2px;">
+                            <div class="divContaingTextWithImg">
                                 OMORI
                                 <a 
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://store.steampowered.com/app/1150690/OMORI/">
-                                    <img height="40px" src="images/omori.gif" />
+                                    <img height="40px" 
+                                        src="images/omori.gif" />
                                 </a>
                                     
                             </div>
                         </li>
                         <li>
-                            <div style="display: flex; align-items: center; gap: 5px;padding-block: 2px;">
+                            <div class="divContaingTextWithImg">
                                 Brawlhalla 
                                 <a
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://store.steampowered.com/app/291550/Brawlhalla/">
-                                    <img height="40px" src="images/taunt-brawlhalla.gif"/>
+                                    <img height="40px" 
+                                        src="images/taunt-brawlhalla.gif"/>
                                 </a>
                             </div>
                         </li>
@@ -104,27 +107,46 @@
                         Web Developing
                     </h3>
                 </li>
+
+                <li>
+                    <a href="./trips.html">
+                        Ταξίδια
+                    </a>
+                </li>
             </ul>
-            <hr/>
+            <hr style="max-width: 90%;"/>
         </div>
 
         <div style="font-size: x-large;">
-            <a href="./Alexandros_Petrache_webpage_.html">
 
                 <div>
-                    <img
-                    width="35px"
-                    style="transform: rotate(0deg); transform: scaleX(-1);filter: invert(0.6) sepia(0.2)  hue-rotate(290deg) saturate(10);"
-                    alt="Go back" 
-                    src="images/Curved_Arrow.svg"/>
+                    <a href="./Alexandros_Petrache_webpage_.html">
 
-                    <img
-                    width="35px"
-                    style="transform: rotate(0deg); transform: scaleX(-1);filter:blur(1px); position: absolute; left: 6px; z-index: -2;"
-                    alt="Go back" 
-                    src="images/Curved_Arrow.svg"/>
+<!-- When the image source is broken we won't see the alt
+text, due to it being 35px wide. 
+We can fix this
+by adding an arrow emoji. CSS mirrors both 
+the arrow image and the arrow emoji.
+
+Despite the alt text never being visible 
+screenreaders might can read it I suppose.
+So keeping it for accessibility.  -->
+                        <img
+                        width="35px"
+                        height="40px"
+                        alt="➜ Go back" 
+                        class="curvedArrow"
+                        src="images/Curved_Arrow.svg"/>
+
+                        <img
+                        width="35px"
+                        height="40px"
+                        alt="➜ Go back" 
+                        class="curvedArrowShadow"
+                        src="images/Curved_Arrow.svg"/>
+
+                    </a>
                 </div>
-            </a>
         </div>
 <!-- Iframe -->
             <iframe id="player" style="padding-bottom: 3%; left: 35%; position: absolute; border: 0; width: 60%; height: 120px;border-radius: 10px;" src="https://bandcamp.com/EmbeddedPlayer/album=1411025474/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/artwork=small/track=1673439474/transparent=true/" seamless><a href="https://omori.bandcamp.com/album/omori-ost">OMORI OST by OMORI</a></iframe>
