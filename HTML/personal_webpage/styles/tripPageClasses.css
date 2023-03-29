@@ -1,0 +1,91 @@
+
+/* trip page classes */
+
+p{
+  transition-duration: 1000ms;
+}
+
+/* top div under page heading */
+#descriptionTripDiv{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
+/* div containing all places */
+#overallTripDiv{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+
+/* div containing known places */
+#knownTripDiv{
+  width: fit-content;
+  text-align: center;
+  font-size: x-large;
+}
+
+#knownTripDiv p:hover{
+  transform: translateX(-5px);
+  transition-duration: 1000ms;
+}
+
+
+.knownPlaces{
+  color: aquamarine;
+  background-color: blueviolet;
+  padding-inline: 6px;
+  padding-block: 4px;
+}
+
+/* div containing uknown places */
+#uknownTripDiv{
+  width: fit-content;
+  text-align: center;
+  font-size: x-large;
+}
+
+#uknownTripDiv p{
+  color: rgb(255, 155, 155);
+  background-color: rgb(13, 15, 107);
+  padding-inline: 6px;
+  padding-block: 4px;
+}
+
+#uknownTripDiv p:hover{
+  transform: translateX(5px);
+  transition-duration: 1000ms;
+}
+
+.uknownPlaces{
+  color: rgb(255, 155, 155);
+  background-color: rgb(13, 15, 107);
+  padding-inline: 6px;
+  padding-block: 4px;
+}
+
+/* responsive design for the description div */
+
+@media (min-width:700px) {
+  #descriptionTripDiv{
+    margin-inline: 10%;
+  }  
+}
+
+@media (min-width:1000px) {
+  #descriptionTripDiv{
+    margin-inline: 20%;
+  }  
+}
+
+@media (min-width:1400px) {
+  #descriptionTripDiv{
+    margin-inline: 30%;
+  }  
+}
+
