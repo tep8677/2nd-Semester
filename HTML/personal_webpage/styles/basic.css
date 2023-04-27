@@ -109,3 +109,7 @@ hr{
     max-width: 750px;
 }
 
+td,th{
+    padding-block: 10px;
+    padding-inline: 5px;
+}

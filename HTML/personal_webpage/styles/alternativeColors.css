@@ -60,3 +60,22 @@ figcaption{
     padding-block: 20px;
     border-radius: 20px;
 }
+
+table{
+    background-color: rgb(248, 244, 255);
+    font-weight: 200;
+    font-size: medium;
+}
+
+
+
+table th{
+    color: rgb(186, 186, 252);
+    font-weight: 400;
+}
+
+caption{
+    color: rgb(124, 104, 104);
+    font-weight: 100;
+    font-size: large;
+}
