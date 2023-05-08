@@ -5,33 +5,108 @@
         <title>
             Για την Σελήνη...
         </title>
+
+        <link rel="icon" type="image" href="https://www.freeiconspng.com/download-ico/44673">
+        <!-- A picture of the moon -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,200;0,400;0,700;1,200&display=swap" rel="stylesheet">
         <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
             body{
                 margin: 0px;
                 padding: 0px;
+                padding-block: 5px;
+                padding-inline: 30px;
                 background-color: rgb(240, 253, 255);
                 color: rgb(64, 67, 70);
+                overflow-x: hidden;
+                font-size: large;
+                font-family: 'Ysabeau', sans-serif;
+                font-weight: 200;
             }
-            .article{
 
+            strong,a{
+                font-weight: 700;
             }
+
+            li{
+                list-style-position: inside;
+            }
+            a{
+                text-decoration: underline dotted rgb(64, 67, 70);
+                text-decoration-thickness: 2px;
+                color: inherit;
+                color: rgba(175, 30, 78, 0.473);
+            }
+       
+           
             #main,#header{
                 width: 100%;
-                height: 100%;
                 padding-top: 10px;
-                background-color: red;
             }
             #footer{
-                padding-top: 10px;
-                position: fixed;
+                padding-block: 20px;
                 bottom: 10px;
                 text-align: center;
                 width: 100%;
-                border-top: 1px solid ;
+                border-top: 1px solid;
             }
+
             .authorName{
                 font-weight: 600;
                 font-style: italic;
+            }
+            .article{
+                padding-block: 10px;
+                padding-inline: 10px;
+                margin-block: 20px;
+                border: solid 1px;
+                border-radius: 5px;
+                background-color: rgba(112, 191, 228, 0.13);
+            }
+            .articleText{
+                text-align: center;
+                padding-block: 20px;
+            }
+            .dashList{
+                list-style-image: url(
+                        'data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="50" x2="100" y2="50" stroke="rgb(64, 67, 70)" stroke-width="5px"/></svg>'
+                    );
+                text-align: left;
+                padding-left: 20px;
+            }
+
+            @keyframes imageScroll {
+                0%{
+                    left: -5px;
+                }
+                100%{
+                    left: -1860px;
+                }
+            }
+            .moonImageContainer{
+                display: flex;
+                position: relative;
+                
+                margin-inline: 10px;
+                border-radius: 10px;
+                animation: imageScroll infinite 50s;
+                animation-timing-function: linear;
+                
+            }
+   
+      
+            .moonImageContainer img{
+                width: 300px;
+                height: 200px;
+                margin-inline: 5px;
+                margin-block: 10px;
+                border-radius: 10px;
+                box-shadow: rgb(29, 29, 94) 0px 0px 10px;
             }
         </style>
         
@@ -43,27 +118,126 @@
             <h1>Σελήνη</h1>
             <ol>
                 <li><a href="#article1">Γενικά</a></li>
-                <li><a href="#article2">article1</a></li>
-                <li><a href="#article3">article1</a></li>
+                <li><a href="#article2">Πως δημιουργήθηκε η Σελήνη</a></li>
+                <li><a href="#article3">Φωτογραφίες</a></li>
             </ol>
         </div>
 
         <div id="main">
+
             <div id="article1" class="article">
-                <h2>Γενικά</h2>
-                Ο μοναδικός φυσικός δορυφόρος της Γης και το δεύτερο κατά σειρά λαμπρότητας σώμα που αντικρύζουμε στο Ουράνιο Στερέωμα.
+                <h2><a href="#article1">Γενικά</a></h2>
+
+                <div class="articleText">
+                    <p>
+                        Η σελήνη είναι ο μοναδικός φυσικός δορυφόρος της Γης 
+                        <br/>και το δεύτερο κατά σειρά λαμπρότητας σώμα 
+                        <br/>που αντικρύζουμε στο Ουράνιο Στερέωμα.
+                    </p>
+                    
+
+                    <p>
+                        
+                        <br/>Eίναι το μόνο μέρος έξω από την γη, 
+                        <br/>όπου έχει πατήσει ανθρώπινο πόδι.
+                        
+                    </p>
+
+                    <p>
+
+                        <br/>Kάνει την γη πιο φιλική 
+                        <br/>όσον αφορά την φιλοξένηση της ζωής,
+                        <br/>διότι σταθεροποιεί τον άξονα της 
+                        <br/>και κατα συνέπεια το κλίμα της.
+                    </p>
+                    
+                    <p>
+                        <br/>Συμβάλλει επίσης στην δημιουργία των παλιρροιών, 
+                        <br/>οι οποίες έχουν διάφορα πλεονεκτήματα 
+                        <br/>όπως:
+                    </p>
+                    
+                    <div style="display: flex; justify-content: center;">
+
+                        <ul class="dashList">
+                            <li>Διαμοιράζονται θρεπτικά συστατικά στα οικοσυστήματα.</li>
+                            <li>Οξυγονώνονται οι οκεανοί.</li>
+                        </ul>                    
+                    </div>
+
+                    <p>
+                        <br/>Πιθανώς δημιουργήθηκε όταν ένα σώμα,
+                        <br/>μεγέθους περίπου ίσου με του Άρη
+                        <br/>συγκρούστηκε με την Γη.
+                    </p>
+
+                    <p>
+                        <br/>Είναι ο 5ος κατα σειρά μεγέθους
+                        <br/>δορυφόρος του ηλιακού μας συστήματος.
+                        <br/>(όπου υπάρχουν πάνω από 200 δορυφοροί
+                        <br/>σε τροχιές γύρω από πλανήτες).
+                    </p>
+
+                    <p>
+                        <br/>Κατα το παρελθόν έχουν σταλθεί στην σελήνη
+                        <br/>διάφορα "σεληνιακά οχήματα" (rovers)
+                        <br/>για την μελέτη του εδάφους της.
+                    </p>
+
+                    <p>
+                        <br/>Η ανθρώπινη κοινώνητα προετοιμάζει
+                        <br/>την αποστολή νέων οχημάτων τέτοιου τύπου
+                        <br/>με σκοπό την επάνοδο των διαστημικών αποστολών.
+                    </p>
+
+
+                </div>
+                  
             </div>
+
+
             <div id="article2" class="article"> 
+                <h2><a href="#article2">Πως δημιουργήθηκε η Σελήνη</a></h2>
+                
+                <div style="display: flex;justify-content: center;" class="articleText">
+                    <iframe  alt="a video of how the moon was created" style="border-radius: 10px; background-color: rgba(161, 201, 228, 0.281); border: solid rgba(201, 201, 201, 0.418);" width="560" height="315" src="https://www.youtube.com/embed/kRlhlCWplqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
 
             </div>
+
             <div id="article3" class="article">
+                <h2><a href="#article3">Φωτογραφίες</a></h2>
+                <div style="overflow: hidden; border-radius: 5px;margin-block: 10px;" >
+                    <div class="moonImageContainer">
+
+                        <img src="https://cdn.pixabay.com/photo/2016/11/25/23/15/moon-1859616__480.jpg">
+                        <img src="https://media.glamour.com/photos/637ba22fdefafdff06cebb9e/master/w_2560%2Cc_limit/653486498"/>
+                        <img src="https://c.tadst.com/gfx/600x337/supermoon-rise.jpg?2"/>
+                        <img src="https://i.cbc.ca/1.3974613.1486671004!/fileImage/httpImage/egypt.jpg"/>
+                        <img src="https://post.healthline.com/wp-content/uploads/2020/08/full-moon-night-landscape-1200x628-facebook-1-1200x628.jpg"/>
+                        <img src="https://kathleenallen.net/wp-content/uploads/2019/03/full-moon-4588727_1280.jpg"/>
+                        <img src="https://cdn.pixabay.com/photo/2016/11/25/23/15/moon-1859616__480.jpg">
+                        <img src="https://media.glamour.com/photos/637ba22fdefafdff06cebb9e/master/w_2560%2Cc_limit/653486498"/>
+                        <img src="https://c.tadst.com/gfx/600x337/supermoon-rise.jpg?2"/>
+                        <img src="https://i.cbc.ca/1.3974613.1486671004!/fileImage/httpImage/egypt.jpg"/>
+
+
+                    </div>
+                        
+                </div>
 
             </div>
         </div>
 
         <div id="footer">
-                Αυτή η σελίδα δημιουργήθηκε από τον <span class="authorName">Αλέξανδρο Πετράκε</span> (tep8677), 
-                <br/>στα πλαίσια του μαθήματος "ΕΡΓΑΛΕΙΑ ΑΝΑΠΤΥΞΗΣ ΕΦΑΡΜΟΓΩΝ INTERNET" Β' Εξάμηνο 2023.
+                Αυτή η σελίδα δημιουργήθηκε από τον 
+                    <span class="authorName">
+                        <a href="https://www.linkedin.com/in/alexandros-petrache">
+                            Αλέξανδρο Πετράκε
+                        </a>
+                    </span> 
+                (tep8677), 
+                <br/>στα πλαίσια του μαθήματος "ΕΡΓΑΛΕΙΑ ΑΝΑΠΤΥΞΗΣ ΕΦΑΡΜΟΓΩΝ INTERNET" Β' Εξάμηνο 2023
                 <br/>στο Δ.ΙΕΚ Περιστερίου.
         </div>
 
