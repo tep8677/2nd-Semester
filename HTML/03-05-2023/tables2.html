@@ -1,0 +1,105 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Tables
+        </title>
+        <style>
+            table{
+                font-family:'Times New Roman', Times, serif;
+                font-size: x-large;
+                border-spacing: 5px;
+                background-color: aliceblue;
+            }
+            table,th,td{
+                border: solid #8100cc 2px;
+                border-radius: 10px;
+                color: chocolate;
+            }
+            th,td{
+                padding: 5px;
+            }
+            th{
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body >
+       <!-- <h1>Check this cool table below B)</h1> -->
+       <h1>Ειδικότητες Δ.ΙΕΚ Περιστερίου</h1>
+
+       <table 
+            border="1"
+        >
+
+            <tr>
+                <th colspan="2">ΙΕΚ ΠΕΡΙΣΤΕΡΙΟΥ</th>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Α' Εξάμηνο</td>
+                <td>Βοηθός Βρεφονηπιοκόμων</td>
+            </tr>
+
+            <tr>
+                <td>Μηχανοτρονική</td>
+            </tr>
+
+            <tr>
+                <td>Κομμωτική Τέχνη</td>
+            </tr>
+            
+            <tr>
+                <td rowspan="3">B' Εξάμηνο</td>
+                <td>Μηχανογραφημένο Λογιστήριο</td>
+            </tr>
+
+            <tr>
+                <td>ΤΕΠ</td>
+            </tr>
+
+            <tr>
+                <td>Φυσικοθεραπευτές</td>
+            </tr>
+
+       </table>
+
+       <canvas id="myCanvas" width="200" height="100"></canvas>
+
+       <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        // ctx.moveTo(0, 0);
+        // ctx.lineTo(200, 200);
+        // ctx.stroke();
+        // ctx.moveTo(200, 0);
+        // ctx.lineTo(0, 200);
+        // ctx.stroke();
+        // ctx.moveTo(200, 0);
+        // ctx.lineTo(0,0);
+        // ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(42, 42, 10, 0, 2 * 3.14);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(200-42, 42, 10, 0, 2 * 3.14);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(42, 42, 5, 0, 2 * 3.14);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(200-42, 42, 5, 0, 2 * 3.14);
+        ctx.fill()
+        ctx.beginPath();
+        ctx.arc(100-10, 200-100-20, 10, 0, 1.3 * 3.14);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(100+10, 200-100-20, 10, -1, 1 * 3.14);
+        ctx.stroke();
+
+        </script>
+    </body>
+
+</html>
