@@ -1,0 +1,34 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            My first webpage!
+        </title>
+    </head>
+
+    <body>
+       <h1>Have a good day! TEP</h1> 
+
+       <input id="inputSeconds"/>
+
+       <button onclick="openWin()" >
+            Timer
+       </button>
+
+     
+        <script>
+            const openWin=()=>{
+                const newWindow=open("");
+                newWindow.document.write("hello world?");
+                newWindow.document.write("<button>close document</button>");
+                newWindow.document.close();
+
+            }
+            const closeWin=()=>{
+                window.document.close();
+            }
+        </script>
+    </body>
+
+</html>

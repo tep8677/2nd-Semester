@@ -1,0 +1,36 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Testing Arrays
+        </title>
+    </head>
+
+    <body>
+       <h1>This is an array</h1> 
+
+
+       <p>
+            hello world
+            <br/>
+            this is an array
+            <div id="personContainer">
+                
+            </div>
+           
+        </p>
+
+
+     
+        <script>
+           
+           const personArray=["Jason","Mikey","Freljiord"];
+           for(let i=0;i<personArray.length;i++){
+            document.querySelector("#personContainer").innerHTML+=(`<li>${personArray[i]}</li>`);
+           }
+       
+       </script>
+    </body>
+
+</html>

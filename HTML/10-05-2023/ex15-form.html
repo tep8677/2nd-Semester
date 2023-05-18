@@ -1,0 +1,40 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Forms
+        </title>
+    </head>
+
+    <body>
+       <h1>Testing forms</h1> 
+
+
+        <form>
+
+        </form>
+
+     
+        <script>
+           
+           const randomImage = "pexels-eberhard-grossgasteiger-1366919.jpg"
+            document.images["coolImage"].src=randomImage
+
+            const randomImage2="pexels-stephan-seeber-1054218.jpg"
+
+            let logicState=true;
+            const changeImage=()=>{
+                if(logicState){
+                    document.images["coolImage"].src=randomImage2;
+                    logicState=!logicState;
+                }
+                else{
+                    document.images["coolImage"].src=randomImage;
+                    logicState=!logicState;
+                }
+            }
+       </script>
+    </body>
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Date
+        </title>
+    </head>
+
+    <body>
+       <h1>Today is</h1> 
+
+
+       <p>
+
+           Today is <span id="date"></span>
+           <br/>
+           A great summer was on <span id="summer"></span>
+         
+            <br/> The real time is <span id="seconds"></span>
+        </p>
+
+
+     
+        <script>
+           
+            setInterval(()=>{
+                    const today = new Date();
+                    document.querySelector("#seconds").textContent=today.toJSON().slice(11,19);
+                    const summerBreak = new Date(2022,5,2);
+                    document.querySelector('#date').textContent=today.toJSON().slice(0,10);
+                    document.querySelector("#summer").textContent=summerBreak.toJSON().slice(0,10);
+            },1000)
+       
+       </script>
+    </body>
+
+</html>
