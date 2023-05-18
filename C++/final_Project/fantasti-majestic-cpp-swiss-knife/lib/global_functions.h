@@ -1,4 +1,0 @@
-#ifndef GLOBAL_FUNCTIONS_H
-#define GLOBAL_FUNCTIONS_H
-
-#endif // GLOBAL_FUNCTIONS_H
