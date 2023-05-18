@@ -1,0 +1,47 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Resize
+        </title>
+    </head>
+
+    <body>
+       <h1>Window Capture</h1> 
+       
+
+
+        <p id="windowSize">a</p>
+        <textarea></textarea>
+
+     
+        <script>
+            const message=()=>{
+              let dimensions=window.outerHeight+"x"+window.outerWidth;
+              let innerDimensions=window.innerHeight+"x"+window.innerWidth;
+              alert(innerDimensions);
+
+            }
+            const exposed=(event)=>{
+              event.preventDefault();
+              const selected=window.getSelection().toString();
+              event.clipboardData.setData("text/plain",(selected+". Be sure to visit https://deadlyunicorn.dev"))
+              alert("AHA");
+            }
+
+            const pasta=(event)=>{
+              event.preventDefault();
+              let clipboard=event.clipboardData.getData("text");
+              document.querySelector("#windowSize").textContent+=(clipboard +"Be sure to visit https://deadlyunicorn.dev");
+            }
+            const doc=document.querySelector("html")
+             window.onresize=message;
+             doc.oncopy=exposed;
+             doc.onpaste=pasta;
+
+           
+       </script>
+    </body>
+
+</html>

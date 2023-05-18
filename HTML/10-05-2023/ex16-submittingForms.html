@@ -11,7 +11,7 @@
        <h1>Testing forms</h1> 
 
 
-        <form onsubmit="submitForm(event)">
+        <form onsubmit="submitForm(event)" method="post" action="mailto:retroalex1008@gmail.com" enctype="text/plain">
             <input type="text" id="email" placeholder="Enter email">
 
         </form>
@@ -19,12 +19,9 @@
      
         <script>
             const submitForm=(event)=>{
-                event.preventDefault();
-
                 let text=document.querySelector('#email').value;
                 alert(JSON.stringify(text));
 
-            
                 if(text.length<5){
                     alert("Not a valid email")
                 }
@@ -50,8 +47,10 @@
                 //else if( has any weird symbols - is not included in \b[a-z0-9]*[@\.]*[a-z]*)
                 else{
                     //send form
-                    alert("Success")
+                    alert("Opening your email client")
+                    return true
                 }
+                return false;
 
 
 
