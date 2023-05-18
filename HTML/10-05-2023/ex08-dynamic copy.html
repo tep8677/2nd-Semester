@@ -1,0 +1,29 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            My first webpage!
+        </title>
+    </head>
+
+    <body>
+       <h1>Have a good day! TEP</h1> 
+
+       <input id="inputSeconds"/>
+
+       <button onclick="startTimer()">
+            Timer
+       </button>
+
+     
+        <script>
+            const startTimer=()=>{
+                let time=(document.querySelector('#inputSeconds').innerHTML.valueOf());
+
+                setTimeout('alert("hello world")',time)
+            }
+        </script>
+    </body>
+
+</html>

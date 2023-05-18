@@ -1,0 +1,50 @@
+
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Events Javascript
+        </title>
+    </head>
+
+    <body id="body">
+
+        <p id="variableText">Hello world</p>
+
+        <button onclick="changeText();">
+            Change me
+        </button>
+
+        <form>
+            <input>
+
+            </input>
+            <button onclick="showName()">Show</button>
+        </form>
+
+        
+        <script>
+            initialText="Hello world";
+            newText="Nyuu"
+            let x=true;
+            const changeText =()=>{
+                if(x){
+                    document.querySelector('#variableText').textContent=newText;
+                }
+                else if(!x){
+                    document.querySelector('#variableText').textContent=initialText;
+                }
+                x=!x;
+            } 
+
+            const showName=()=>{
+             
+                let input=document.querySelector("input");
+                alert("hello "+input.value);
+            }
+        </script>
+    </body>
+
+</html>

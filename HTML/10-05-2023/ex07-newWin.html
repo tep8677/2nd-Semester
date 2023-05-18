@@ -1,0 +1,44 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Windows
+        </title>
+    </head>
+
+    <body>
+       <h1>Open new windows</h1>
+        
+       <p>Open new window with identifier "displayWindow"</p>
+       <button onclick="openLink()">Open</button>
+       <button onclick="closeLink()">Terminate</button>
+
+        
+        <script>
+            const openLink=()=>{
+                displayWindow=open("ex06-frames.html","displayWindow","width=400,height=300,status=no,toolbar=no,menubar=no");
+            }
+
+
+            //displayWindow == the name of the new window?
+            //if it has no name, pressing the button
+            //multiple times
+            //will open multiple windows
+
+            //default name is '_blank' => open in new window. 
+
+            //status,toolbar,menubar -> don't seem to work?
+            //the docs I am using are for JS 1.2..
+            //ES1?!?! Before 1998?!?!? XD
+
+            // my browser has a minimum height and width.
+            // probably to prevent unwanted popups..
+
+            const closeLink=()=>{
+                displayWindow.close();
+            }
+        </script>
+    </body>
+
+</html>
