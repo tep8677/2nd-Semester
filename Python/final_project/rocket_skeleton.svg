@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="rocket_skeleton.svg">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="111.0839,36.921736"
+       end_point="111.0839,256.37503"
+       center_point="111.0839,146.64838"
+       id="path-effect4568"
+       is_visible="true"
+       mode="free"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.64"
+     inkscape:cx="425.30081"
+     inkscape:cy="330.51882"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1108"
+     inkscape:window-height="1015"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4566"
+       inkscape:path-effect="#path-effect4568">
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path4540"
+         d="M 111.39251,36.812114 C 63.911044,64.726426 50.246671,104.0314 50.246671,104.0314 35.045717,152.55752 39.55589,194.3685 39.55589,194.3685 c 1.169304,23.97074 20.847024,62.00653 20.847024,62.00653 M 110.77529,36.812114 c 47.48147,27.914312 61.14584,67.219286 61.14584,67.219286 15.20095,48.52612 10.69078,90.3371 10.69078,90.3371 -1.1693,23.97074 -20.84702,62.00653 -20.84702,62.00653"
+         style="fill:none;stroke:#000000;stroke-width:1.10000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:original-d="M 111.39251,36.812114 C 63.911044,64.726426 50.246671,104.0314 50.246671,104.0314 35.045717,152.55752 39.55589,194.3685 39.55589,194.3685 c 1.169304,23.97074 20.847024,62.00653 20.847024,62.00653" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4542"
+         d="M 111.31568,241.34621 C 76.236557,226.14526 60.402914,256.37503 60.402914,256.37503 m 50.449206,-15.02882 c 35.07912,-15.20095 50.91277,15.02882 50.91277,15.02882"
+         style="fill:none;stroke:#000000;stroke-width:1.10000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:original-d="M 111.31568,241.34621 C 76.236557,226.14526 60.402914,256.37503 60.402914,256.37503" />
+    </g>
+  </g>
+</svg>
