@@ -108,6 +108,43 @@
                 border-radius: 10px;
                 box-shadow: rgb(29, 29, 94) 0px 0px 10px;
             }
+
+            #commentForm{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            #commentForm [type="submit"]{
+                padding-block: 10px;
+                padding-inline: 5px;
+                border:none;
+                border-bottom: 1px solid black;
+                background-color: white;
+                border-radius: 0px 5px 5px 0px;
+                cursor: pointer;
+            }
+
+            #commentForm [type="submit"]:focus{
+                border: none;
+            }
+            
+            .commentDiv{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                gap: 10px;
+            }
+            .commentDiv textarea{
+                min-height: 200px;
+                min-width: 400px;
+                max-width: 400px;
+            }
+
+            #main h2{
+                text-align: center;
+            }
+
         </style>
         
     </head>
@@ -120,6 +157,7 @@
                 <li><a tabIndex=0 href="#article1">Γενικά</a></li>
                 <li><a tabIndex=0 href="#article2">Πως δημιουργήθηκε η Σελήνη</a></li>
                 <li><a tabIndex=0 href="#article3">Φωτογραφίες</a></li>
+                <li><a tabIndex=0 href="#userForm">Επικοινωνία - Σχόλια</a></li>
             </ol>
         </div>
 
@@ -209,6 +247,7 @@
                 <div style="overflow: hidden; border-radius: 5px;margin-block: 10px;" >
                     <div class="moonImageContainer">
 
+                        <!-- Need to save those locally in case they go down.. -->
                         <img src="https://cdn.pixabay.com/photo/2016/11/25/23/15/moon-1859616__480.jpg">
                         <img src="https://media.glamour.com/photos/637ba22fdefafdff06cebb9e/master/w_2560%2Cc_limit/653486498"/>
                         <img src="https://c.tadst.com/gfx/600x337/supermoon-rise.jpg?2"/>
@@ -219,11 +258,48 @@
                         <img src="https://media.glamour.com/photos/637ba22fdefafdff06cebb9e/master/w_2560%2Cc_limit/653486498"/>
                         <img src="https://c.tadst.com/gfx/600x337/supermoon-rise.jpg?2"/>
                         <img src="https://i.cbc.ca/1.3974613.1486671004!/fileImage/httpImage/egypt.jpg"/>
-
-
+                        <img src="https://post.healthline.com/wp-content/uploads/2020/08/full-moon-night-landscape-1200x628-facebook-1-1200x628.jpg"/>
+                        <img src="https://kathleenallen.net/wp-content/uploads/2019/03/full-moon-4588727_1280.jpg"/>
+<!-- Seems to not be working correctly in full screen.. -->
                     </div>
                         
                 </div>
+
+            </div>
+
+            <div id="userForm" class="article">
+                <h2><a tabIndex=0 href="#userForm">Επικοινωνία - Σχόλια</a></h2>
+
+                <div class="articleText">
+
+                    <p>
+                        <strong>Θέλετε να έρθετε σε επαφή μαζί μας</strong> ή να μας στείλετε τα σχόλια σας 
+                        <br/><em>σχετικά με τις πληροφορίες</em> που αντλήσατε από αυτήν την σελίδα;
+                    </p>
+                    
+                    <p>
+                        <u>Συμπληρώστε την παρακάτω φόρμα.</u>
+                    </p>
+
+                    <form method="post" id="commentForm">
+                        
+                        <div class="commentDiv">
+                            <label for="userComment">Σχόλια:</label>
+                            <textarea required name="userComment" id="userComment"></textarea>
+                        </div>
+
+                        <div>
+                            <input type="submit"/>
+                        </div>
+                    
+                    </form>
+                </div>
+
+
+
+                        
+
+                        
 
             </div>
         </div>
@@ -240,6 +316,7 @@
                 <br/>στα πλαίσια του μαθήματος "ΕΡΓΑΛΕΙΑ ΑΝΑΠΤΥΞΗΣ ΕΦΑΡΜΟΓΩΝ INTERNET" Β' Εξάμηνο 2023
                 <br/>στο Δ.ΙΕΚ Περιστερίου.
         </div>
+
 
     </body>
 
