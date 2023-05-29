@@ -4,7 +4,7 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 800
 SCREEN_TITLE = "TEST 1"
 
-class MyGame(arcade.Window):
+class MyGame(arcade.Window): ##define Class MyGame as a subclass of arcade window
 
     def __init__(self):
 
