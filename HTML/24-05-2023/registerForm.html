@@ -1,0 +1,79 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            A user form
+        </title>
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #f0f8ff;
+            }
+            form{
+                border: solid black 1px;
+                border-radius: 10px;
+                padding: 20px;
+                background-color: rgb(250, 253, 255);
+                
+
+            }
+            input{
+                text-align: center;
+               
+            }
+            form div{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+            input{
+                margin-left: 5px;
+            }
+            div:has(label){
+                justify-content: flex-end;
+            }
+            div:has([type="checkbox"]){
+                justify-content: center;
+            }
+            
+            div:has(#submit){
+                justify-content: center;
+            }
+        </style>
+    </head>
+
+    <body>
+       <h1>Δημιουργία νέου λογαριασμού</h1>
+       
+       <form method="post">
+            <div>
+                <label for="firstName" >Όνομα Χρήστη:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Εισαγωγή κειμένου...">
+            </div>
+
+            <div>
+                <label for="lastName">Επώνυμο Χρήστη:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Εισαγωγή κειμένου...">
+            </div>
+
+            <div>
+                <label for="password">Κωδικός:</label>
+                <input type="password" id="password" name="password" placeholder="Εισαγωγή κωδικού...">
+            </div>
+
+            <div>
+                <label for="checkbox">Συμφωνώ με τους όρους χρήσης.</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+            </div>
+
+            <div>
+                <input id="submit" type="submit">
+            </div>
+
+        </form> 
+    </body>
+
+</html>
