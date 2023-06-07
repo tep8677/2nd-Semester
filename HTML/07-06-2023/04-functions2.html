@@ -1,0 +1,39 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Javascript Operations
+        </title>
+    </head>
+
+    <body>
+       <h1>Have a good day, world!</h1>
+       
+        <p>Hello</p>
+       
+       <script type="text/javascript">
+            
+            const add = (x,y) =>{
+                return x+y;
+            };
+
+            const multiply = (x,y) =>{
+                return x*y;
+            }
+
+            // document.write(add(6,4));
+            document.write("<table>")
+            for (let i=1;i<=10;i++){
+                document.write("<tr><th> Table of ",i,": </th>")
+                for (let j=1;j<=10;j++){
+                    document.write("<td>",multiply(i,j),"</td>")
+                };
+                document.write("</tr>")
+            };
+            document.write("</table>")
+
+       </script>
+    </body>
+
+</html>
